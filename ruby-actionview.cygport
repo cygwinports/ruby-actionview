@@ -1,0 +1,14 @@
+inherit rubygem
+
+NAME="ruby-actionview"
+VERSION=4.2.1
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby Action View extension"
+DESCRIPTION="Simple, battle-tested conventions and helpers for building web pages."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_actionview_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_actionview_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
